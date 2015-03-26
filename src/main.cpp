@@ -27,14 +27,6 @@ class xApp : public ofBaseApp {
 			ofBackgroundGradient(255,0);
 
 			cam.begin();
-		        int timeSinceStart = ofGetElapsedTimef(); 
-		        float deltaTime = (timeSinceStart - oldTimeSinceStart)/1000.0f;
-		        oldTimeSinceStart = timeSinceStart;
-		        mAccumulator  += deltaTime;
-		        while(mAccumulator > gTimeStep) {
-		                mAccumulator -= gTimeStep;
-		         	stepPhysX();
-		        }
 		        if(gScene)
 		                stepPhysX();
 

@@ -5,12 +5,12 @@
 
 OF_ROOT = ../../..
 
-hpaths    = -I./Include
+hpaths    = -I./physxNV/Include
 
-lpaths    = -L./Lib/linux64
-lpaths    += -L./lib/linux64
-lpaths    += -L./Bin/linux64
-lpaths    += -L./lib/linux64
+lpaths    = -L./physxNV/Lib/linux64
+lpaths    += -L./physxNV/lib/linux64
+lpaths    += -L./physxNV/Bin/linux64
+lpaths    += -L./physxNV/lib/linux64
 
 defines   = -DPHYSX_PROFILE_SDK
 defines   += -DRENDER_SNIPPET
@@ -45,14 +45,14 @@ cflags += $(hpaths)
 cflags += -m64
 
 cflags  += -m64 -fPIC -msse2 -mfpmath=sse -ffast-math -fexceptions -frtti -fvisibility=hidden -fvisibility-inlines-hidden
-cflags  += -Wall -Wextra -Wstrict-aliasing=2 -fdiagnostics-show-option
+cflags  += -Wall -Wextra -fdiagnostics-show-option
 cflags  += -Wno-long-long
 cflags  += -Wno-unknown-pragmas -Wno-invalid-offsetof -Wno-uninitialized
 cflags  += -Wno-unused-parameter
 cflags  += -g3 -gdwarf-2
 
 cppflags  += -m64 -fPIC -msse2 -mfpmath=sse -ffast-math -fexceptions -frtti -fvisibility=hidden -fvisibility-inlines-hidden
-cppflags  += -Wall -Wextra -Wstrict-aliasing=2 -fdiagnostics-show-option
+cppflags  += -Wall -Wextra -fdiagnostics-show-option
 cppflags  += -Wno-long-long
 cppflags  += -Wno-unknown-pragmas -Wno-invalid-offsetof -Wno-uninitialized
 cppflags  += -Wno-unused-parameter

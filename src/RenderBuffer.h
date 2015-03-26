@@ -17,8 +17,6 @@ void RenderBuffer(float* pVertList, float* pColorList, int type, int num)
 
 void RenderData(const PxRenderBuffer & data) {
 	glLineWidth(1.0f);
-//	glDisable(GL_LIGHTING);
-
 	unsigned int NbPoints = data.getNbPoints();
 	if(NbPoints)
 	{
@@ -117,9 +115,4 @@ void RenderData(const PxRenderBuffer & data) {
 		delete[] pVertList;
 		delete[] pColorList;
 	}
-	//glEnable(GL_LIGHTING);
-	//glColor4f(1.0f,1.0f,1.0f,1.0f);
 }
-
-
-
