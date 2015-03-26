@@ -20,8 +20,6 @@ PxScene*                 gScene = NULL;
 PxReal                   gTimeStep = 1.0f/60;
 PxCloth* gCloth = NULL;
 
-
-
 void stepPhysX() {
         gScene->simulate(gTimeStep);
         gScene->fetchResults(true);

@@ -5,12 +5,12 @@
 
 OF_ROOT = ../../..
 
-hpaths    = -I./physxNV/Include
+hpaths    = -I../physxNV/Include
 
-lpaths    = -L./physxNV/Lib/linux64
-lpaths    += -L./physxNV/lib/linux64
-lpaths    += -L./physxNV/Bin/linux64
-lpaths    += -L./physxNV/lib/linux64
+lpaths    = -L../physxNV/Lib/linux64
+lpaths    += -L../physxNV/lib/linux64
+lpaths    += -L../physxNV/Bin/linux64
+lpaths    += -L../physxNV/lib/linux64
 
 defines   = -DPHYSX_PROFILE_SDK
 defines   += -DRENDER_SNIPPET
